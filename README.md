@@ -19,24 +19,43 @@ O foco é a **tomada de decisão orientada por dados**, avaliando métricas como
 ## 🗂 Estrutura do Projeto
 
 📁 Treino_Analise
+
 │
+
 ├── 📁 Arquivos
+
 │ └── afiliadas.csv
+
 │
+
 ├── 📁 simulacao
+
 │ ├── simulacao.csv
+
 │ └── comparacao.csv
+
 │
+
 ├── 📁 analise
+
 │ ├── Lucro_por_afiliadas.csv
+
 │ └── Pausar_afiliadas.csv
+
 │ └── Roi_por_afiliadas.csv
+
 │ └── TOP 5_afiliadas_Lucro.csv
+
 │ └── TOP 5_afiliadas_ROI.csv
+
 │
+
 ├── simulacao.py
+
 ├── main.py
+
 └── README.md
+
 ---
 
 ## 📥 Entrada de Dados
