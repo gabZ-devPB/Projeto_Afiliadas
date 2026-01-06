@@ -18,7 +18,25 @@ O foco é a **tomada de decisão orientada por dados**, avaliando métricas como
 
 ## 🗂 Estrutura do Projeto
 
-
+📁 Treino_Analise
+│
+├── 📁 Arquivos
+│ └── afiliadas.csv
+│
+├── 📁 simulacao
+│ ├── simulacao.csv
+│ └── comparacao.csv
+│
+├── 📁 analise
+│ ├── Lucro_por_afiliadas.csv
+│ └── Pausar_afiliadas.csv
+│ └── Roi_por_afiliadas.csv
+│ └── TOP 5_afiliadas_Lucro.csv
+│ └── TOP 5_afiliadas_ROI.csv
+│
+├── simulacao.py
+├── main.py
+└── README.md
 ---
 
 ## 📥 Entrada de Dados
@@ -33,6 +51,62 @@ O projeto utiliza um arquivo CSV contendo dados históricos das afiliadas.
 - `Custo_R$`
 
 ---
+
+## 📊 Análise Estratégica
+
+Nesta etapa do projeto foi realizada a **engenharia de métricas**, criando indicadores essenciais para avaliação de performance das afiliadas.
+
+### 📊 Métricas criadas
+
+#### 🔄 Taxa de Conversão (%)
+Indica a eficiência da afiliada em transformar cliques em vendas.
+
+#### 💰 Lucro (R$)
+Representa o ganho real após descontar os custos.
+
+#### 📈 ROI (%)
+Mede a eficiência do investimento realizado.
+
+Essas métricas são fundamentais para análises de negócio e tomadas de decisão estratégicas.
+
+---
+
+Com base nas métricas calculadas, foi realizada uma **análise estratégica das afiliadas**, focada em performance e rentabilidade.
+
+### 🏆 Top 5 afiliadas por ROI
+Identificação das afiliadas com **maior eficiência de investimento**, ou seja, aquelas que geram mais retorno proporcional ao custo.
+
+Critério:
+- Ordenação decrescente por **ROI (%)**
+- Seleção das 5 melhores afiliadas
+
+---
+
+### 💵 Top 5 afiliadas por Lucro
+Identificação das afiliadas que geram **maior lucro absoluto**, independentemente do ROI.
+
+Critério:
+- Ordenação decrescente por **Lucro_R$**
+- Seleção das 5 afiliadas mais lucrativas
+
+---
+
+### 🚫 Afiliadas que devem ser pausadas
+Foram identificadas afiliadas que apresentam **performance negativa ou abaixo do esperado**, com base nos seguintes critérios:
+
+- **Lucro negativo**
+- **ROI inferior a 0%**
+- **Baixa taxa de conversão**
+
+Essas afiliadas são classificadas como candidatas a **pausa ou otimização**, evitando prejuízos e melhorando a alocação de recursos.
+
+---
+
+## 🧠 Insight de Negócio
+
+A análise demonstra que **alto faturamento não significa necessariamente alto lucro**, reforçando a importância do uso de métricas como ROI e Taxa de Conversão para decisões mais eficientes.
+
+O projeto evidencia uma abordagem orientada a dados, simulando cenários reais de análise de performance no contexto de marketing de afiliados.
 
 ## 📊 Métricas Calculadas
 
